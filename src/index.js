@@ -8,10 +8,10 @@ class Weather extends React.Component {
     return (
       <div className="weather">
         <h1>Weather</h1>
-        <CurrentWeather weather={this.props.weather} />
-        <MinutelyWeather weather={this.props.weather} />
-        <HourlyWeather weather={this.props.weather} />
-        <DailyWeather weather={this.props.weather} />
+        <CurrentWeather weather={this.props.weather["currently"]} />
+        <MinutelyWeather weather={this.props.weather["minutely"]} />
+        <HourlyWeather weather={this.props.weather["hourly"]} />
+        <DailyWeather weather={this.props.weather["daily"]} />
       </div>
     );
   }
@@ -22,7 +22,7 @@ class CurrentWeather extends React.Component {
     return (
       <div className="currentWeather">
         <p>
-          {this.props.weather["currently"]["summary"]} -- {this.props.weather["currently"]["temperature"]}
+          {this.props.weather["summary"]} -- {this.props.weather["temperature"]}
         </p>
       </div>
     );
@@ -34,7 +34,7 @@ class MinutelyWeather extends React.Component {
     return (
       <div className="minutelyWeather">
         <p>
-          {this.props.weather["minutely"]["summary"]}
+          {this.props.weather["summary"]}
         </p>
       </div>
     );
@@ -46,7 +46,7 @@ class HourlyWeather extends React.Component {
     return (
       <div className="hourlyWeather">
         <p>
-          {this.props.weather["hourly"]["summary"]}
+          {this.props.weather["summary"]}
         </p>
       </div>
     );
@@ -58,7 +58,7 @@ class DailyWeather extends React.Component {
     return (
       <div className="dailyWeather">
         <p>
-          {this.props.weather["daily"]["summary"]}
+          {this.props.weather["summary"]}
         </p>
       </div>
     );
