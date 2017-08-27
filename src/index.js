@@ -8,26 +8,21 @@ class Weather extends React.Component {
     return (
       <div className="weather">
         <h1>Weather</h1>
-        <CurrentWeather />
-	<MinutelyWeather />
-	<HourlyWeather />
-	<DailyWeather />
+        <CurrentWeather weather={this.props.weather["currently"]} />
+        <MinutelyWeather weather={this.props.weather["minutely"]} />
+        <HourlyWeather weather={this.props.weather["hourly"]} />
+        <DailyWeather weather={this.props.weather["daily"]} />
       </div>
     );
   }
 }
 
 class CurrentWeather extends React.Component {
-  constructor() {
-    super();
-    this.weather = MockWeather;
-  }
-
   render() {
     return (
       <div className="currentWeather">
         <p>
-          {this.weather["currently"]["summary"]} -- {this.weather["currently"]["temperature"]}
+          {this.props.weather["summary"]} -- {this.props.weather["temperature"]}
         </p>
       </div>
     );
@@ -35,57 +30,42 @@ class CurrentWeather extends React.Component {
 }
 
 class MinutelyWeather extends React.Component {
-  constructor() {
-    super();
-    this.weather = MockWeather;
-  }
-
   render() {
     return (
       <div className="minutelyWeather">
-	<p>
-	  {this.weather["minutely"]["summary"]}
-	</p>
+        <p>
+          {this.props.weather["summary"]}
+        </p>
       </div>
     );
   }
 }
 
 class HourlyWeather extends React.Component {
-  constructor() {
-    super();
-    this.weather = MockWeather;
-  }
-
   render() {
     return (
       <div className="hourlyWeather">
-	<p>
-	  {this.weather["hourly"]["summary"]}
-	</p>
+        <p>
+          {this.props.weather["summary"]}
+        </p>
       </div>
     );
   }
 }
 
 class DailyWeather extends React.Component {
-  constructor() {
-    super();
-    this.weather = MockWeather;
-  }
-
   render() {
     return (
       <div className="dailyWeather">
-	<p>
-	  {this.weather["daily"]["summary"]}
-	</p>
+        <p>
+          {this.props.weather["summary"]}
+        </p>
       </div>
     );
   }
 }
 
 ReactDOM.render(
-  <Weather/>,
+  <Weather weather={MockWeather}/>,
   document.getElementById('root')
 );
