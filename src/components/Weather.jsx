@@ -4,7 +4,11 @@ import CurrentWeather from './CurrentWeather';
 const Weather = (props => (
   <div className="weather">
     <h1>Weather</h1>
-    <CurrentWeather weather={props.weather.currently} />
+    <CurrentWeather
+      icon={props.weather.currently.icon}
+      temperature={props.weather.currently.temperature}
+      summary={props.weather.currently.summary}
+    />
     <MinutelyWeather weather={props.weather.minutely} />
     <HourlyWeather weather={props.weather.hourly} />
     <DailyWeather weather={props.weather.daily} />

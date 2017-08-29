@@ -3,7 +3,7 @@ import React from 'react';
 const CurrentWeather = (props => (
   <div className="currentWeather">
     <p>
-      {props.weather.summary} -- {props.weather.temperature}
+      {props.icon} {props.temperature} {props.summary}
     </p>
   </div>
 ));
