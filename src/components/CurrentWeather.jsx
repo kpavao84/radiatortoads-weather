@@ -1,10 +1,10 @@
 import React from 'react';
+import ReactSkycons from './ReactSkycons';
 
 const CurrentWeather = (props => (
   <div className="currentWeather">
-    <p>
-      {props.icon} {props.temperature}° {props.summary}
-    </p>
+    <ReactSkycons icon={props.icon.toUpperCase().replace('-', '_')} color="black" />
+    {props.temperature}° {props.summary}
   </div>
 ));
 
