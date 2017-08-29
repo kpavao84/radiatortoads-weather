@@ -1,5 +1,5 @@
 import React from 'react';
-import CurrentWeather from './CurrentWeather.jsx';
+import CurrentWeather from './CurrentWeather';
 
 const Weather = (props => (
   <div className="weather">
