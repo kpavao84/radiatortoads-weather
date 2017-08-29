@@ -1,4 +1,5 @@
 import React from 'react';
+import CurrentWeather from './CurrentWeather.jsx';
 
 const Weather = (props => (
   <div className="weather">
@@ -7,14 +8,6 @@ const Weather = (props => (
     <MinutelyWeather weather={props.weather.minutely} />
     <HourlyWeather weather={props.weather.hourly} />
     <DailyWeather weather={props.weather.daily} />
-  </div>
-));
-
-const CurrentWeather = (props => (
-  <div className="currentWeather">
-    <p>
-      {props.weather.summary} -- {props.weather.temperature}
-    </p>
   </div>
 ));
 
