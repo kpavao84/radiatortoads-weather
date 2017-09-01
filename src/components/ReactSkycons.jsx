@@ -39,11 +39,6 @@ class ReactSkycons extends Component {
   render() {
     let props = {};
 
-    const defaultStyle = {
-      width: '100%',
-      height: '100%'
-    };
-
     for (let prop in this.props) {
       props[prop] = this.props[prop];
     }
@@ -51,7 +46,7 @@ class ReactSkycons extends Component {
     delete props.autoplay;
 
     return (
-      <canvas style={defaultStyle} {...props} />
+      <canvas {...props} />
     );
   }
 }
