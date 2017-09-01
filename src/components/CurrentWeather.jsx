@@ -4,7 +4,7 @@ import './currentWeather.css';
 
 const CurrentWeather = (props => (
   <div id="current-weather">
-    <ReactSkycons className="icon" icon={props.icon.toUpperCase().replace('-', '_')} color="#000" />
+    <ReactSkycons className="icon" icon={props.icon} color="#000" />
     {props.temperature}° {props.summary}
   </div>
 ));
