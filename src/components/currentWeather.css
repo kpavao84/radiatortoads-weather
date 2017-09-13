@@ -5,12 +5,3 @@
     align-items: center;
     justify-content: center;
 }
-
-#minutely-weather {
-    display: flex;
-    height: 10em;
-    font-size: large;
-    align-items: center;
-    justify-content: center;
-}
-
