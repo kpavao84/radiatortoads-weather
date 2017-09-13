@@ -1,0 +1,112 @@
+{
+  "currently":  {
+    "time": 1503461393,
+    "summary": "Clear",
+    "icon": "clear-night",
+    "precipIntensity": 0,
+    "precipProbability": 0,
+    "temperature": 66.83,
+    "apparentTemperature": 66.83,
+    "humidity": 0.64,
+    "windSpeed": 11.69,
+    "windGust": 18.44,
+    "windBearing": 318,
+    "cloudCover": 0.01
+  },
+  "hourly": {
+    "summary": "Partly cloudy starting tomorrow evening.",
+    "icon": "partly-cloudy-night",
+    "data": [
+      {
+        "time": 1503460800,
+        "summary": "Clear"
+      },
+      {
+        "time": 1503471600,
+        "summary": "Clear"
+      },
+      {
+        "time": 1503478800,
+        "summary": "Clear"
+      },
+      {
+        "time": 1503486000,
+        "summary": "Clear"
+      },
+      {
+        "time": 1503493200,
+        "summary": "Clear"
+      },
+      {
+        "time": 1503500400,
+        "summary": "Clear"
+      },
+      {
+        "time": 1503507600,
+        "summary": "Clear"
+      },
+      {
+        "time": 1503514800,
+        "summary": "Clear"
+      },
+      {
+        "time": 1503522000,
+        "summary": "Clear"
+      },
+      {
+        "time": 1503529200,
+        "summary": "Partly Cloudy"
+      },
+      {
+        "time": 1503536400,
+        "summary": "Partly Cloudy"
+      },
+      {
+        "time": 1503543600,
+        "summary": "Mostly Cloudy"
+      }
+    ]
+  },
+    "daily": {
+    "summary": "Light rain throughout the week, with temperatures falling to 71°F on Friday.",
+    "icon": "rain",
+    "data": [
+      {
+        "time": 1503378000,
+        "summary": "Drizzle in the morning.",
+        "icon": "rain",
+        "precipIntensity": 0.0012,
+        "precipIntensityMax": 0.0038,
+        "precipIntensityMaxTime": 1503586800,
+        "precipProbability": 0.07,
+        "precipType": "rain",
+        "temperatureMin": 61.46,
+        "temperatureMax": 71.05
+      },
+      {
+        "time": 1503464400,
+        "summary": "Partly cloudy starting in the evening.",
+        "icon": "partly-cloudy-night",
+        "precipIntensity": 0.0012,
+        "precipIntensityMax": 0.0038,
+        "precipIntensityMaxTime": 1503586800,
+        "precipProbability": 0.07,
+        "precipType": "rain",
+        "temperatureMin": 61.46,
+        "temperatureMax": 71.05
+      },
+      {
+        "time": 1503550800,
+        "summary": "Partly cloudy until afternoon.",
+        "icon": "partly-cloudy-day",
+        "precipIntensity": 0.0012,
+        "precipIntensityMax": 0.0038,
+        "precipIntensityMaxTime": 1503586800,
+        "precipProbability": 0.07,
+        "precipType": "rain",
+        "temperatureMin": 61.46,
+        "temperatureMax": 71.05
+      }
+    ]
+  }
+}
