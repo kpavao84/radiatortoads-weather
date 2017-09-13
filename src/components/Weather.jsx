@@ -2,29 +2,19 @@ import React from 'react';
 import CurrentWeather from './CurrentWeather';
 
 const Weather = (props => (
-  <div className="weather">
-    <h1>Weather</h1>
+  <div id="weather">
     <CurrentWeather
       icon={iconName(props)}
       temperature={props.weather.currently.temperature}
       summary={props.weather.currently.summary}
     />
-    <MinutelyWeather weather={props.weather.minutely} />
     <HourlyWeather weather={props.weather.hourly} />
     <DailyWeather weather={props.weather.daily} />
   </div>
 ));
 
-const MinutelyWeather = (props => (
-  <div className="minutelyWeather">
-    <p>
-      {props.weather.summary}
-    </p>
-  </div>
-));
-
 const HourlyWeather = (props => (
-  <div className="hourlyWeather">
+  <div id="hourly-weather">
     <p>
       {props.weather.summary}
     </p>
@@ -32,7 +22,7 @@ const HourlyWeather = (props => (
 ));
 
 const DailyWeather = (props => (
-  <div className="dailyWeather">
+  <div id="daily-weather">
     <p>
       {props.weather.summary}
     </p>

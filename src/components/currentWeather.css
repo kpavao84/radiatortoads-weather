@@ -1,5 +1,16 @@
 #current-weather {
-    height: 15em;
     display: flex;
+    height: 10em;
+    font-size: x-large;
     align-items: center;
+    justify-content: center;
 }
+
+#minutely-weather {
+    display: flex;
+    height: 10em;
+    font-size: large;
+    align-items: center;
+    justify-content: center;
+}
+
