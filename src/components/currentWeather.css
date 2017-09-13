@@ -1,0 +1,7 @@
+#current-weather {
+    display: flex;
+    height: 10em;
+    font-size: x-large;
+    align-items: center;
+    justify-content: center;
+}

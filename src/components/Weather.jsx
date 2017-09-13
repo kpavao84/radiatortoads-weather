@@ -1,33 +1,20 @@
 import React from 'react';
+import CurrentWeather from './CurrentWeather';
 
 const Weather = (props => (
-  <div className="weather">
-    <h1>Weather</h1>
-    <CurrentWeather weather={props.weather.currently} />
-    <MinutelyWeather weather={props.weather.minutely} />
+  <div id="weather">
+    <CurrentWeather
+      icon={iconName(props)}
+      temperature={props.weather.currently.temperature}
+      summary={props.weather.currently.summary}
+    />
     <HourlyWeather weather={props.weather.hourly} />
     <DailyWeather weather={props.weather.daily} />
   </div>
 ));
 
-const CurrentWeather = (props => (
-  <div className="currentWeather">
-    <p>
-      {props.weather.summary} -- {props.weather.temperature}
-    </p>
-  </div>
-));
-
-const MinutelyWeather = (props => (
-  <div className="minutelyWeather">
-    <p>
-      {props.weather.summary}
-    </p>
-  </div>
-));
-
 const HourlyWeather = (props => (
-  <div className="hourlyWeather">
+  <div id="hourly-weather">
     <p>
       {props.weather.summary}
     </p>
@@ -35,11 +22,16 @@ const HourlyWeather = (props => (
 ));
 
 const DailyWeather = (props => (
-  <div className="dailyWeather">
+  <div id="daily-weather">
     <p>
       {props.weather.summary}
     </p>
   </div>
 ));
+
+// convert the icon name from the api to the one ReactSkycons needs
+function iconName(props) {
+  return props.weather.currently.icon.toUpperCase().replace('-', '_');
+}
 
 export default Weather;
